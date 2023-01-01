@@ -80,7 +80,7 @@ const Projects = () => {
         >
           {/* ROW 1 */}
           <div
-            className="flex items-center justify-center text-center  p-10 bg-red max-w-[400px] 
+            className="flex items-center  justify-center text-center  p-10 bg-red max-w-[400px] 
           max-h-[400px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES

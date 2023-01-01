@@ -5,6 +5,8 @@ import LineGradient from "../components/LineGradient";
 import skillsImage from "../assets/skills-image.png";
 
 const MySkills = () => {
+  
+
   const skills = [
     {
       id: "01",
@@ -98,8 +100,9 @@ const MySkills = () => {
                   {title}
                 </p>
               </div>
+
               <div
-                className={`w-1/2 md:w-3/4 h-32 ${backgroundColor} absolute right-0 top-0 z-[-1]`}
+                className={`w-1/2 md:w-3/4 rounded h-32 ${backgroundColor} absolute right-0 top-0 z-[-1]`}
               ></div>
             </div>
             <p className="mt-5">{content}</p>

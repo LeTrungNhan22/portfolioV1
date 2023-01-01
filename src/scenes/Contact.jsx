@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 const Contact = () => {
+  const [selectedPage, setSelectedPage] = useState("contact");
   const {
     register,
     trigger,
@@ -68,14 +69,14 @@ const Contact = () => {
           }}
         >
           <form
-            target="_blank"
+            // target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/5f82f565ce2bc6e9072d96a428bf215f"
+            action="https://formsubmit.co/letrungnhan220801@gmail.com"
             method="POST"
           >
             <input
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full rounded-md shadow-md bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-sky-200 font-semibold placeholder-opaque-black p-3"
               placeholder="NAME"
               {...register("name", {
                 required: true,
@@ -91,7 +92,7 @@ const Contact = () => {
 
             <input
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full rounded-md  shadow-md  bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-sky-200 font-semibold placeholder-opaque-black p-3 mt-5"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
@@ -107,8 +108,8 @@ const Contact = () => {
 
             <textarea
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              placeholder=" MESSAGE"
+              className="w-full rounded-md  shadow-md  bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-sky-200 font-semibold placeholder-opaque-black p-3 mt-5"
+              placeholder="MESSAGE"
               rows="4"
               cols="50"
               {...register("message", {
@@ -126,10 +127,12 @@ const Contact = () => {
             )}
             <button
               type="submit"
-              className="p-5 bg-yellow font-semibold text-deep-blue hover:bg-red hover:text-white
-              transition duration-500"
+              class="relative mt-5 p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
             >
-              SEND ME A MESSAGE
+              <span class="w-full h-full bg-gradient-to-br from-[#ff8a05] via-[#ff5478] to-[#ff00c6] group-hover:from-[#ff00c6] group-hover:via-[#ff5478] group-hover:to-[#ff8a05] absolute"></span>
+              <span class="relative px-6 py-3 transition-all ease-out bg-deep-blue rounded-md group-hover:bg-opacity-0 duration-400">
+                <span class="relative text-white">SEND ME A MESSAGE</span>
+              </span>
             </button>
           </form>
         </motion.div>

@@ -61,7 +61,7 @@ const Testimonials = () => {
           ({ id, contentImage, delayTime, describe, bgColor }) => (
             <motion.div
               key={id}
-              className={`${bgColor} ${testimonialStyles} before:content-${contentImage}`}
+              className={`${bgColor} ${testimonialStyles} before:content-${contentImage} rounded-md`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
