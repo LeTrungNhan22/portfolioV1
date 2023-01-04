@@ -1,8 +1,8 @@
 import React from "react";
-import linkedinImage from "../assets/linkedin.png";
-import facebookImage from "../assets/facebook.png";
-import instagramImage from "../assets/instagram.png";
-import twitterImage from "../assets/twitter.png";
+import linkedinImage from "../assets/socialMedia/linkedin.png";
+import facebookImage from "../assets/socialMedia/facebook.png";
+import instagramImage from "../assets/socialMedia/instagram.png";
+import twitterImage from "../assets/socialMedia/twitter.png";
 
 const SocialMediaIcons = () => {
   return (

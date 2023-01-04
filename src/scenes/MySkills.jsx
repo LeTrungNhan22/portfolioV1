@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 import LineGradient from "../components/LineGradient";
-import skillsImage from "../assets/skills-image.png";
+import skillsImage from "../assets/landing/skills-image.png";
 
 const MySkills = () => {
-  
-
   const skills = [
     {
       id: "01",

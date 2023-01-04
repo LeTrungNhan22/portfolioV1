@@ -45,7 +45,10 @@ function App() {
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
-        <MySkills />
+        <MySkills
+          setSelectedPage={setSelectedPage}
+          selectedPage={selectedPage}
+        />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto ">

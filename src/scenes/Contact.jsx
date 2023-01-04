@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
 const Contact = () => {
-  const [selectedPage, setSelectedPage] = useState("contact");
   const {
     register,
     trigger,
@@ -55,7 +54,10 @@ const Contact = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <img alt="contact" src={require("../assets/contact-image.jpeg")} />
+          <img
+            alt="contact"
+            src={require("../assets/landing/contact-image.jpeg")}
+          />
         </motion.div>
         <motion.div
           className="basis-1/2 flex justify-center"
