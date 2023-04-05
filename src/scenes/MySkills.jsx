@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 import LineGradient from "../components/LineGradient";
@@ -76,12 +76,12 @@ const MySkills = () => {
       </div>
       {/* HEADER AND IMAGE  SECTION */}
       {/* SKILLS CONTENT */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-16 gap-32 flex-wrap">
         {/* EXPERIENCE */}
         {skills.map(({ id, title, backgroundColor, content, delayTime }) => (
           <motion.div
             key={id}
-            className="md:w-1/3 mt-10"
+            className="md:w-1/4 mt-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

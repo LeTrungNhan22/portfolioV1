@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import LineGradient from "../components/LineGradient";
@@ -57,6 +57,7 @@ const Contact = () => {
           <img
             alt="contact"
             src={require("../assets/landing/contact-image.jpeg")}
+            className="rounded-md"
           />
         </motion.div>
         <motion.div

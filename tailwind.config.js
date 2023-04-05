@@ -26,6 +26,7 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         opensans: ["Open Sans", "sans-serif"],
+        greatVibes: ["Great Vibes", "cursive"],
       },
       content: {
         brush: "url('./assets/landing/brush.png')",
