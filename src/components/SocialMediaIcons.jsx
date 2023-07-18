@@ -2,7 +2,7 @@ import React from "react";
 import linkedinImage from "../assets/socialMedia/linkedin.png";
 import facebookImage from "../assets/socialMedia/facebook.png";
 import instagramImage from "../assets/socialMedia/instagram.png";
-import twitterImage from "../assets/socialMedia/twitter.png";
+import githubImage from "../assets/socialMedia/github-mark-white.png";
 
 const SocialMediaIcons = () => {
   return (
@@ -16,7 +16,7 @@ const SocialMediaIcons = () => {
         <img alt="linked-in" src={linkedinImage} />
       </a>
       <a
-        href="https://www.facebook.com"
+        href="https://www.facebook.com/lltnhan"
         className="hover:opacity-50 transition duration-500"
         target="_blank"
         rel="noreferrer"
@@ -24,7 +24,7 @@ const SocialMediaIcons = () => {
         <img alt="facebook" src={facebookImage} />
       </a>
       <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/lltnhan/"
         className="hover:opacity-50 transition duration-500"
         target="_blank"
         rel="noreferrer"
@@ -32,12 +32,12 @@ const SocialMediaIcons = () => {
         <img alt="instagram" src={instagramImage} />
       </a>
       <a
-        href="https://www.twitter.com"
-        className="hover:opacity-50 transition duration-500"
+        href="https://github.com/LeTrungNhan22"
+        className="hover:opacity-50 transition duration-500 "
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter" src={twitterImage} />
+        <img alt="twitter" src={githubImage} className="h-[30px] w[30px]" />
       </a>
     </div>
   );
