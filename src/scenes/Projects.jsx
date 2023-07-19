@@ -109,12 +109,12 @@ const Projects = () => {
           {/* -------------------------- */}
           {/* ROW 2 */}
           <Project title="Project 3"
-            desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus a
-               fuga tempora labore facilis soluta."
+            link="https://letrungnhan22.github.io/product-manager"
+            desc="This is a product manager app. It is a place where you can manage your products."
           />
           <Project title="Project 4"
-            desc="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus a
-               fuga tempora labore facilis soluta."/>
+            link="https://ecommerce-mauve-xi.vercel.app"
+            desc="This is a product manager app. It is a place where you can manage your products." />
           {/* ROW 2 */}
 
           <div

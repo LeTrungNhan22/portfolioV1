@@ -1,6 +1,11 @@
 import React from "react";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import profile1Image from "../assets/testimonials/person-1.png";
+
+import profile2Image from "../assets/testimonials/person-2.png";
+import profile3Image from "../assets/testimonials/person-3.png";
+
 
 const Testimonials = () => {
   const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col
@@ -10,31 +15,32 @@ const Testimonials = () => {
   const testimonialPersons = [
     {
       id: "1",
-      contentImage: "person1",
+      contentImage: profile1Image,
       delayTime: 0.0,
-      describe: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      bgColor: "bg-blue",
+      describe: "Vu Van Minh - FullStack Developer with 1 year experience in Java Spring Boot",
+      bgColor: "bg-gradient-to-r from-cyan-500 to-blue-500",
     },
     {
       id: "2",
-      contentImage: "person2",
+      contentImage: profile2Image,
       delayTime: 0.2,
-      describe: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      bgColor: "bg-red",
+      describe: "Ho Xuan THinh - Frontend Developer with 1 year experience in ReactJS",
+      bgColor: "bg-gradient-to-r from-pink-500 to-blue-500",
     },
     {
       id: "3",
-      contentImage: "person3",
+      contentImage: profile3Image,
       delayTime: 0.4,
-      describe: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      bgColor: "bg-yellow",
+      describe: "Tran Trong Nghia - Front Developer with ability to learn new technology quickly",
+      bgColor: "bg-gradient-to-r from-amber-500 to-blue-500",
     },
   ];
+
   return (
     <section id="testimonials" className="pt-32 pb-16">
       {/*HEADING */}
       <motion.div
-        className="md:w-1/3 text-center md:text-left"
+        className="md:w-2/3 text-center md:text-left"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -49,19 +55,19 @@ const Testimonials = () => {
         </p>
         <LineGradient width="w-2/4 mx-auto"></LineGradient>
         <p className="mt-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam
-          accusamus.
+          Through the positive feedback from satisfied clients and colleagues, my dedication to delivering high-quality frontend solutions that exceed expectations is evident. The testimonials highlight my strong communication skills, reliability, and ability to translate ideas into visually compelling and user-friendly interfaces.
         </p>
       </motion.div>
       {/* HEADING   END */}
 
       {/* TESTIMONIALS SECTION */}
       <div className="md:flex md:justify-between gap-8">
-        {testimonialPersons.map(
+        {testimonialPersons && testimonialPersons.map(
           ({ id, contentImage, delayTime, describe, bgColor }) => (
             <motion.div
               key={id}
-              className={`${bgColor} ${testimonialStyles} before:content-${contentImage} rounded-md`}
+              className={`${bgColor} 
+              ${testimonialStyles} before:  rounded-md`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -71,8 +77,16 @@ const Testimonials = () => {
                 visible: { opacity: 1, scale: 1 },
               }}
             >
+              <div className="flex justify-center ">
+                <img
+                  src={contentImage}
+                  alt=""
+                  className="h-40 w-40 rounded-full absolute -top-12 "
+                />
+              </div>
               <p className="font-playfair text-6xl">”</p>
               <p className="text-center">{describe}</p>
+
             </motion.div>
           )
         )}

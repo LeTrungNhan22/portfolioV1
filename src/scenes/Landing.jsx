@@ -60,8 +60,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-center md:text-start">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quod
-            minima hic repellat ut fugit harum.
+
+            Hello, I'm Le Trung Nhan, a passionate and creative Frontend Developer. With a solid foundation in HTML, CSS, and JavaScript, I constantly seek opportunities to craft exceptional and user-optimized user interface experiences.
           </p>
         </motion.div>
         {/* HEADING */}

@@ -3,7 +3,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-52 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-400 to-pink-600 pt-10">
+    <footer className="h-52 bg-gradient-to-r from-purple-500 to-purple-900 to-pink-600 pt-10">
       <div className="w-5/6 mx-auto">
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center">

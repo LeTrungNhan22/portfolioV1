@@ -10,24 +10,24 @@ const MySkills = () => {
       id: "01",
       title: "EXPERIENCE",
       content:
-        " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vel beatae cum corporis possimus, quasi odio excepturi officiis praesentium architecto sint",
-      backgroundColor: "bg-blue",
+        "3-month internship in Java front-end position at Long Van Solution Company, ensuring the role of building UI for Inventory using JSF, Java Core, JSP technology",
+      backgroundColor: "bg-gradient-to-r from-cyan-500 to-blue-500",
       delayTime: 0.0,
     },
     {
       id: "02",
       title: "INNOVATIVE",
       content:
-        " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vel beatae cum corporis possimus, quasi odio excepturi officiis praesentium architecto sint",
-      backgroundColor: "bg-red",
+        "With a keen eye for emerging technologies and a passion for experimentation, I continuously seek innovative solutions that elevate user experiences and streamline frontend development processes. My ability to think outside the box and implement cutting-edge techniques empowers me to deliver forward-thinking and dynamic web applications that leave a lasting impact.",
+      backgroundColor: "bg-gradient-to-r from-pink-500 to-blue-500",
       delayTime: 0.2,
     },
     {
       id: "03",
       title: "IMAGINATIVE",
       content:
-        " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vel beatae cum corporis possimus, quasi odio excepturi officiis praesentium architecto sint",
-      backgroundColor: "bg-yellow",
+        "  My creativity and imagination drive me to constantly explore new and unique approaches to frontend development, resulting in captivating and original user interface designs. I enjoy pushing the boundaries of traditional web development to create imaginative and immersive digital experiences for users.t",
+      backgroundColor: "bg-gradient-to-r from-amber-500 to-blue-500",
       delayTime: 0.4,
     },
   ];
@@ -54,11 +54,12 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3"></LineGradient>
-          <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            magnam accusamus, doloremque velit quisquam quis doloribus odit sunt
-            necessitatibus, asperiores libero itaque consequatur debitis vero
-            aliquid nesciunt rem, repellendus perferendis!
+          <p className="mt-10 ">
+            As a skilled Frontend Developer, I possess a strong command of HTML, CSS, and JavaScript, enabling me to create visually appealing and responsive web interfaces. I am proficient in implementing modern design principles, utilizing CSS frameworks like Bootstrap and Tailwind CSS to ensure seamless user experiences across various devices.
+          </p>
+          <br />
+          <p>
+            With expertise in frontend libraries and frameworks such as React and Vue.js, I excel in building interactive and dynamic user interfaces. I am well-versed in using AJAX and RESTful APIs to integrate backend functionalities seamlessly, ensuring smooth data flow and efficient performance.
           </p>
         </motion.div>
         <div className="md:mt-0 mt-16">

@@ -8,11 +8,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
-      className={`${
-        selectedPage === lowerCasePage
-          ? "text-yellow"
-          : "hover:text-yellow transition duration-500"
-      }`}
+      className={`${selectedPage === lowerCasePage
+        ? "text-yellow"
+        : "hover:text-yellow transition duration-500"
+        }`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -73,9 +72,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage
     ? ""
-    : "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900 to-indigo-500 ";
+    : "bg-gradient-to-r from-fuchsia-500 to-cyan-500 ";
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed py-6 `}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-greatVibes text-3xl font-bold">TrungNhan</h4>
 
